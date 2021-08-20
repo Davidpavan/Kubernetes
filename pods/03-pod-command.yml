@@ -6,3 +6,6 @@ spec:
   containers:
     - name: debug
       image: centos:7
+      command:
+        - sleep
+        - "100000"
