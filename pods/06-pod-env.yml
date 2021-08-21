@@ -15,7 +15,7 @@ spec:
           valueFrom:
             configMapKeyRef:
               key: URL
-                name: sample-meta
+              name: sample-meta
 
 ---
 apiVersion: v1
