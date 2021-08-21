@@ -14,8 +14,8 @@ spec:
           #value: google.com
           valueFrom:
             configMapKeyRef:
-            key: URL
-            name: sample-meta
+              key: URL
+                name: sample-meta
 
 ---
 apiVersion: v1
