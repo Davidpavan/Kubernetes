@@ -7,5 +7,5 @@ spec:
     - name: security
       image: pavanvere/pavanzs.online-security
       securityContext:
-        runAsUser: 2000
-        #runAsNonRoot: true
+        #runAsUser: 2000
+        runAsNonRoot: true
