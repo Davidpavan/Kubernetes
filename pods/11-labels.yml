@@ -12,3 +12,18 @@ spec:
       command:
         - sleep
         - "10000000"
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: annotations
+  annotations:
+    store.invetory/fruit-name: Berry
+    country/imported: kerala
+spec:
+  containers:
+    - name: centos
+      image: centos:7
+      command:
+        - sleep
+        - "10000000"
