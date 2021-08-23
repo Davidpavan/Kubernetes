@@ -1,15 +1,15 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nginx-prod
+  name: nginx
 spec:
   containers:
     - name: nginx
       image: nginx
       volumeMounts:
-        - name: index
+        - name: carry
           mountPath: /usr/share/nginx/html
   volumes:
-    - name: index
+    - name: carry
       configMap:
-        name: index
+        name: carry
