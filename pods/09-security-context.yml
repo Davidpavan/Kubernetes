@@ -9,3 +9,18 @@ spec:
       securityContext:
         #runAsUser: 2000
         runAsNonRoot: true
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: privileged
+spec:
+  containers:
+    - name: docker
+      image: docker
+      securityContext:
+        privileged: true
+      command:
+        - sleep
+        - "1000000"
